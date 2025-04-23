@@ -4,14 +4,14 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .hero {
-background: url('/imagens/atlas-alvaro.png') center/cover no-repeat;
-height: 600px;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-position: relative;
-box-shadow: 0 8px 32px 0 rgba(0,0,0,0.5);
+  background: url('https://raw.githubusercontent.com/Henrique1q2w3e/Team-Moreira/master/imagens/alvaro-trofeu.png') center/cover no-repeat;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.5);
 }
 .hero-overlay {
 position: absolute;
