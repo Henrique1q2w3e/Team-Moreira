@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Álvaro - Fisiculturismo & Treinos</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.custom-offcanvas {
+background: linear-gradient(135deg, #181818 70%, #00ffcc 100%);
+color: #fff;
+}
+.menu-avatar {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+object-fit: cover;
+border: 2px solid #00ffcc;
+box-shadow: 0 2px 8px #0005;
+}
+.offcanvas-title {
+font-weight: bold;
+color: #ffb300;
+margin-left: 5px;
+}
+.offcanvas-body a {
+font-size: 1.2rem;
+color: #fff;
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 18px;
+padding: 8px 12px;
+border-radius: 6px;
+transition: background 0.2s, color 0.2s;
+}
+.offcanvas-body a:hover {
+background: #00ffcc;
+color: #181818;
+}
+.menu-img {
+margin-top: 30px;
+width: 100%;
+border-radius: 8px;
+box-shadow: 0 2px 8px #0003;
+}
+</style>
+</head>
+<body>
+  <a href="https://wa.me/SEUNUMERO" target="_blank" style="position:fixed;bottom:30px;right:30px;z-index:9999;background:#25d366;color:#fff;padding:15px 20px;border-radius:50px;box-shadow:0 2px 10px #000;display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:bold;">
+      <i class="fab fa-whatsapp"></i> Fale com Álvaro
+    </a>
+<button class="navbar-toggler btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+  <i class="fas fa-bars"></i>
+</button>
+
+<div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="offcanvasMenu">
+  <div class="offcanvas-header flex-column align-items-start">
+    <img src="imagens/caveira.png" alt="Logo Álvaro" class="menu-avatar mb-2">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <a href="cronometro.html"><i class="fas fa-bolt"></i> Novidade</a>
+    <a href="ficha-de-treino.html"><i class="fas fa-dumbbell"></i> Fichas de Treino</a>
+
+  </div>
+</div>
+<div class="hero">
+  <div class="hero-overlay"></div>
+  <div style="position:relative;z-index:2;">
+    <h1 style="font-size:4rem;font-weight:bold;color:#00ffcc;text-shadow:2px 2px 12px #000;">Team Moreira</h1>
+    <p style="font-size:1.5rem;color:#fff;text-shadow:1px 1px 8px #000;">Força, Disciplina, Estilo e Resultado</p>
+    <a href="#sobre-alvaro" class="btn btn-warning btn-lg mt-4" style="font-weight:bold;">Conheça Álvaro</a>
+  </div>
+</div>
+
+<section class="profile-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5">
+        <img src="imagens/alvaro-trofeu.png" alt="Foto Álvaro">
+      </div>
+      <div class="col-md-7 profile-desc">
+          <h2 class="section-title mb-3" id="sobre-alvaro">
+              Álvaro Moreira &mdash; <span style="color:#ffb300;">Team Moreira</span>
+            </h2>
+        <p><strong>Atleta Classic Physique | 3x Campeão Brasileiro NPC</strong></p>
+        <p>Influenciador de marcas como <strong>Bold</strong> e <strong>Canibal Inc</strong>. Anos de experiência unindo vivência de atleta e conhecimento prático para transformar vidas com consultoria esportiva online.</p>
+        <ul>
+          <li>Atende atletas de alto rendimento e quem busca lifestyle saudável</li>
+          <li>Experiência prévia em Muay Thai e Kung Fu</li>
+          <li>Olhar individual para cada aluno</li>
+        </ul>
+        <div class="my-4 p-3 rounded" style="background:#0f0f0f;border-left:5px solid #00ffcc;">
+          <h5 class="mb-2" style="color:#00ffcc;">Lema:</h5>
+          <blockquote class="mb-0" style="font-size:1.2rem;font-style:italic; color:#00ffcc;">“básico bem feito.”</blockquote>
+        </div>
+        <p>Sem fórmulas milagrosas, sem frescura. Trabalho com o que realmente dá resultado: treino inteligente, dieta ajustada à sua realidade, acompanhamento constante e suporte verdadeiro.</p>
+        <p><strong>Se você está pronto para evoluir de verdade, seja bem-vindo ao time.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container my-5">
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div style="background:#0f0f0f;border-radius:10px;padding:30px 10px;color:#ffb300;">
+        <i class="fas fa-trophy fa-2x mb-2"></i>
+        <h4>3x Campeão Brasileiro NPC</h4>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div style="background:#0f0f0f;border-radius:10px;padding:30px 10px;color:#00ffcc;">
+        <i class="fas fa-users fa-2x mb-2"></i>
+        <h4>Consultoria para atletas e lifestyle</h4>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div style="background:#0f0f0f;border-radius:10px;padding:30px 10px;color:#fff;">
+        <i class="fas fa-dumbbell fa-2x mb-2"></i>
+        <h4>Experiência em Muay Thai e Kung Fu</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid my-5 px-3 px-md-5">
+  <h2 class="section-title text-center mb-5">Linha do Tempo</h2>
+  <div class="timeline-wrapper d-flex justify-content-center">
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-icon" style="background:#ffb300;"><i class="fas fa-medal"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-year" style="color:#ffb300;">2024</span>
+          <p>Finalista Integral Classic Physique</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-icon" style="background:#00ffcc;"><i class="fas fa-trophy"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-year" style="color:#00ffcc;">2023</span>
+          <p>3x Campeão Brasileiro NPC</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-icon" style="background:#fff;color:#000;"><i class="fas fa-rocket"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-year" style="color:#fff;">2020</span>
+          <p>Início da consultoria online</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+      <img src="imagens/caveira.png" alt="Exemplo de Ficha de Treino" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6" data-aos="fade-left">
+      <h2 class="section-title" style="color:#ffb300;">Fichas de Treino Exclusivas</h2>
+      <p style="font-size:1.2rem;">
+        Chega de treinar no escuro! Tenha acesso a fichas de treino <strong>personalizadas</strong> por quem entende de palco e resultado. 
+        <br><br>
+        Seja você iniciante ou avançado, atleta ou lifestyle, Álvaro monta sua ficha pensando nos seus objetivos, limitações e rotina.
+      </p>
+      <ul style="color:#00ffcc;font-size:1.1rem;">
+        <li><i class="fas fa-check-circle"></i> Treinos para hipertrofia, definição ou performance</li>
+        <li><i class="fas fa-check-circle"></i> Estrutura fácil de seguir</li>
+        <li><i class="fas fa-check-circle"></i> Suporte direto com Álvaro</li>
+      </ul>
+      <a href="ficha-de-treino.html" class="btn btn-warning btn-lg mt-3" style="font-weight:bold;">Quero minha ficha agora</a>
+      <div class="mt-4 p-3 rounded" style="background:#181818;color:#fff;">
+        <i class="fas fa-quote-left" style="color:#ffb300;"></i>
+        <span style="font-style:italic;">“Com a ficha do Álvaro, finalmente vi evolução de verdade!”</span>
+        <br>
+        <small style="color:#00ffcc;">— Aluno satisfeito</small>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container my-5">
+  <h2 class="section-title text-center">Assista um pouco do nosso trabalho</h2>
+  <div class="ratio ratio-16x9" style="max-width:800px;margin:auto;">
+    <iframe src="https://www.youtube.com/embed/pAZXRgBewGQ" title="YouTube video" allowfullscreen></iframe>
+  </div>
+</div>
+
+<footer style="background:#181818;color:#fff;padding:30px 0;text-align:center;margin-top:50px;">
+  <div>
+    <a href="https://www.instagram.com/SEUINSTAGRAM" target="_blank" style="color:#ffb300;margin:0 10px;font-size:1.5rem;"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/SEUNUMERO" target="_blank" style="color:#25d366;margin:0 10px;font-size:1.5rem;"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  <div style="margin-top:10px;">&copy; 2025 Team Moreira. Todos os direitos reservados.</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>

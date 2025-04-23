@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lançamento Misterioso</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 80px 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+html, body {
+max-width: 100vw;
+overflow-x: hidden !important;
+}
+.navbar-toggler {
+  border: none;
+  background: #00ffcc;
+  color: #181818;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.custom-offcanvas {
+  background: linear-gradient(135deg, #181818 70%, #00ffcc 100%);
+  color: #fff;
+  width: 260px;
+}
+.menu-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00ffcc;
+  box-shadow: 0 2px 8px #0005;
+}
+.offcanvas-title {
+  font-weight: bold;
+  color: #ffb300;
+  margin-left: 5px;
+}
+.offcanvas-body a {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.offcanvas-body a:hover {
+  background: #00ffcc;
+  color: #181818;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+#timer {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #ff4d4d;
+  text-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff4d4d;
+  word-wrap: break-word;
+}
+.tease-text {
+  font-size: 1.3rem;
+  color: #aaa;
+  margin-bottom: 60px;
+  font-style: italic;
+}
+.shadow-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 77, 77, 0.2);
+  display: inline-block;
+  max-width: 100%;
+}
+.smoke-effect {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.02) 20%, transparent 70%);
+  animation: smoke 20s infinite linear;
+  z-index: 0;
+}
+.container, .container-fluid {
+max-width: 100vw !important;
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+
+.smoke-effect {
+max-width: 100vw !important;
+left: 0 !important;
+}
+.shadow-box {
+max-width: 98vw;
+box-sizing: border-box;
+}
+@keyframes smoke {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-5%, -5%); }
+  100% { transform: translate(0, 0); }
+}
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  #timer { font-size: 2rem; }
+  .tease-text { font-size: 1.1rem; }
+  .shadow-box { padding: 18px; }
+  @media (max-width: 768px) {
+body {
+padding-top: 120px; /* empurra o conteúdo para baixo do menu */
+}
+
+.shadow-box {
+margin: 0 auto;
+width: 90%;
+}
+
+.navbar {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1050;
+background: #0f0f0f; 
+padding: 10px 20px;
+}
+
+.offcanvas {
+top: 56px !important; 
+}
+}
+
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark px-3 fixed-top">
+<button class="navbar-toggler btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+  <i class="fas fa-bars"></i>
+</button>
+</nav>
+<div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="offcanvasMenu">
+<div class="offcanvas-header flex-column align-items-start">
+  <img src="imagens/caveira.png" alt="Logo Álvaro" class="menu-avatar mb-2">
+  <h5 class="offcanvas-title">Menu</h5>
+  <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+</div>
+<div class="offcanvas-body">
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="ficha-de-treino.html"><i class="fas fa-dumbbell"></i> Fichas de Treino</a>
+  <a href="cronometro.html"><i class="fas fa-bolt"></i> Novidade</a>
+</div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center vh-100 position-relative" style="z-index: 1;">
+<div class="shadow-box mt-4">
+  <h1>Algo grande está chegando...</h1>
+  <p class="tease-text">Você não vai querer ficar de fora.</p>
+  <div id="timer">Carregando...</div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script src="funcao.js"></script>
+<script>
+
+</script>
+</body>
+</html>

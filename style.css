@@ -1,0 +1,355 @@
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero {
+background: url('/imagens/atlas-alvaro.png') center/cover no-repeat;
+height: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+position: relative;
+box-shadow: 0 8px 32px 0 rgba(0,0,0,0.5);
+}
+.hero-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(120deg, rgba(0,0,0,0.7) 60%, rgba(0,255,204,0.1) 100%);
+z-index: 1;
+}
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  z-index: 1;
+  text-shadow: 2px 2px 12px rgba(0, 255, 204, 0.7), 0 0 25px rgba(0, 255, 204, 0.7);
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  0% { text-shadow: 2px 2px 12px rgba(0, 255, 204, 0.7), 0 0 25px rgba(0, 255, 204, 0.7); }
+  100% { text-shadow: 0 0 15px rgba(0, 255, 204, 1), 0 0 50px rgba(0, 255, 204, 1); }
+}
+.section-title {
+  font-size: 2rem;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.profile-section {
+  background-color: #ffffff;
+  color: #000;
+  padding: 60px 0;
+}
+.profile-section img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+.profile-desc {
+  padding: 20px;
+}
+.highlight {
+  color: #000;
+  font-weight: 700;
+}
+.btn-warning {
+  font-weight: bold;
+}
+.offcanvas-body a {
+  font-size: 1.2rem;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+.navbar-toggler {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+.menu-img {
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 8px;
+}
+.video-container {
+  margin-top: 50px;
+  text-align: center;
+}
+.video-container iframe {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+}
+.timeline-wrapper {
+width: 100%;
+overflow-x: hidden;
+}
+
+.timeline {
+position: relative;
+padding-left: 30px;
+max-width: 800px;
+width: 100%;
+}
+
+.timeline:before {
+content: '';
+position: absolute;
+left: 32px;
+top: 0;
+bottom: 0;
+width: 4px;
+background: linear-gradient(to bottom, #00ffcc 0%, #ffb300 100%);
+border-radius: 2px;
+}
+
+.timeline-item {
+display: flex;
+align-items: flex-start;
+margin-bottom: 40px;
+position: relative;
+}
+
+.timeline-icon {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+margin-right: 20px;
+box-shadow: 0 2px 8px #0003;
+z-index: 1;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.timeline-icon:hover {
+transform: scale(1.15) rotate(-8deg);
+box-shadow: 0 0 20px #00ffcc88, 0 0 10px #ffb30088;
+}
+
+.timeline-content {
+background: #181818;
+padding: 15px 20px;
+border-radius: 8px;
+box-shadow: 0 2px 8px #0002;
+width: 100%;
+color: #fff;
+transition: background 0.2s;
+}
+
+.timeline-content:hover {
+background: #232323;
+}
+
+.timeline-year {
+font-weight: bold;
+font-size: 1.1rem;
+display: block;
+margin-bottom: 5px;
+letter-spacing: 1px;
+}
+
+body {
+background: #0f0f0f;
+color: #fff;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.consultoria-hero {
+background: linear-gradient(120deg, #181818 70%, #00ffcc 100%);
+padding: 60px 0 40px 0;
+text-align: center;
+position: relative;
+}
+.consultoria-hero h1 {
+color: #ffb300;
+font-weight: bold;
+font-size: 2.5rem;
+margin-bottom: 20px;
+text-shadow: 2px 2px 12px #000;
+}
+.consultoria-hero p {
+font-size: 1.2rem;
+color: #fff;
+max-width: 600px;
+margin: 0 auto 30px auto;
+}
+.badge-vagas {
+background: #ff3c00;
+color: #fff;
+font-size: 1.1rem;
+padding: 8px 18px;
+border-radius: 30px;
+font-weight: bold;
+margin-bottom: 20px;
+display: inline-block;
+letter-spacing: 1px;
+box-shadow: 0 2px 8px #0005;
+animation: pulse 1.2s infinite alternate;
+}
+@keyframes pulse {
+0% { box-shadow: 0 0 10px #ff3c00, 0 2px 8px #0005; }
+100% { box-shadow: 0 0 25px #ffb300, 0 2px 8px #0005; }
+}
+@keyframes zoomVideo {
+0% { transform: scale(1); }
+50% { transform: scale(1.05); }
+100% { transform: scale(1); }
+}
+.consultoria-list {
+list-style: none;
+padding: 0;
+margin: 30px 0 0 0;
+}
+.consultoria-list li {
+font-size: 1.15rem;
+margin-bottom: 18px;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.consultoria-list i {
+color: #00ffcc;
+font-size: 1.3rem;
+}
+.consultoria-preco {
+font-size: 2rem;
+color: #ffb300;
+font-weight: bold;
+margin: 30px 0 10px 0;
+}
+.consultoria-cta {
+margin-top: 25px;
+font-size: 1.2rem;
+font-weight: bold;
+padding: 14px 32px;
+border-radius: 30px;
+background: linear-gradient(90deg, #ffb300 60%, #00ffcc 100%);
+color: #181818;
+border: none;
+transition: background 0.2s, color 0.2s;
+box-shadow: 0 2px 8px #0003;
+text-decoration: none;
+display: inline-block;
+}
+.consultoria-cta:hover {
+background: linear-gradient(90deg, #00ffcc 60%, #ffb300 100%);
+color: #000;
+}
+.consultoria-section {
+background: #181818;
+border-radius: 16px;
+padding: 40px 30px;
+margin-top: -40px;
+box-shadow: 0 2px 16px #0005;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+}
+.consultoria-destaque {
+color: #00ffcc;
+font-weight: bold;
+}
+.consultoria-quote {
+background: #232323;
+color: #fff;
+border-left: 5px solid #00ffcc;
+padding: 18px 22px;
+border-radius: 8px;
+margin-top: 30px;
+font-style: italic;
+font-size: 1.1rem;
+box-shadow: 0 2px 8px #0002;
+}
+.custom-offcanvas {
+background-color: #111;
+width: 280px;
+}
+
+.custom-offcanvas a {
+display: block;
+color: #fff;
+font-size: 1.1rem;
+padding: 12px 0;
+text-decoration: none;
+border-bottom: 1px solid #333;
+transition: background 0.3s;
+}
+
+.custom-offcanvas a:hover {
+background-color: #222;
+}
+
+.menu-avatar {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+object-fit: cover;
+border: 2px solid #00ffcc;
+}
+
+@media (max-width: 768px) {
+.timeline {
+padding-left: 0;
+margin: 0 auto;
+}
+
+.timeline:before {
+left: 50%;
+transform: translateX(-50%);
+}
+
+.timeline-item {
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.timeline-icon {
+margin-bottom: 10px;
+margin-right: 0;
+}
+
+.timeline-content {
+width: 100%;
+max-width: 90vw;
+}
+.container, .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  overflow-x: hidden;
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.img-fluid {
+  max-width: 100vw !important;
+  height: auto;
+}
+body {
+  overflow-x: hidden !important;
+}
+.consultoria-section {
+  padding: 25px 8px;
+}
+.consultoria-hero h1 {
+  font-size: 1.6rem;
+}
+.consultoria-preco {
+  font-size: 1.4rem;
+}
+}
